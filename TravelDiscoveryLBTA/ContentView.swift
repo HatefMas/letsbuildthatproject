@@ -10,10 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            Text("Hello, world!")
-                .padding()
+            //Text("Hello, world!")
+                //.padding()
                 //.navigationBarTitle("Inline", displayMode: .inline)
-                //.navigationTitle("Discover")
+            ScrollView{
+                HStack(spacing: 16){
+                    Spacer()
+                        .frame(width: 50, height: 50)
+                        .background(Color.gray)
+                        .cornerRadius(.infinity)
+                    
+                    Spacer()
+                        .frame(width: 50, height: 50)
+                        .background(Color.gray)
+                        .cornerRadius(.infinity)
+                    
+                    Spacer()
+                        .frame(width: 50, height: 50)
+                        .background(Color.gray)
+                        .cornerRadius(.infinity)
+
+                }
+                
+                Text("Test")
+                
+                
+            }.navigationTitle("Discover")
+            
         }
         
     }
